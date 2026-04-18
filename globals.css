@@ -1,0 +1,37 @@
+import Link from 'next/link';
+
+export default function NotFound() {
+  return (
+    <section className="flex min-h-[70vh] items-center bg-ink-50">
+      <div className="mx-auto max-w-[88rem] px-6 py-24 lg:px-10">
+        <div className="max-w-2xl">
+          <div className="font-serif text-[10rem] font-medium leading-none text-amber-500">404</div>
+          <h1 className="mt-6 font-serif text-display-lg text-ink-900">
+            This page has left the <em className="italic">expo floor</em>.
+          </h1>
+          <p className="mt-6 max-w-md text-lg text-ink-700">
+            The page you&rsquo;re looking for may have moved, or the link may be from an older version of the site. Try one of these instead:
+          </p>
+
+          <div className="mt-10 grid gap-3 md:grid-cols-2">
+            {[
+              ['Tradeshow headshot activation', '/services/tradeshow-headshot-activation'],
+              ['Las Vegas venues', '/las-vegas'],
+              ['All services', '/services'],
+              ['Get a quote', '/contact'],
+            ].map(([label, href]) => (
+              <Link
+                key={href}
+                href={href}
+                className="group flex items-center justify-between rounded-xl border border-ink-900/10 bg-ink-50 p-4 hover:border-amber-500/50"
+              >
+                <span className="text-ink-900">{label}</span>
+                <span aria-hidden="true" className="text-ink-400 group-hover:text-amber-500">→</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

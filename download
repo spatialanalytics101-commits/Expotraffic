@@ -1,0 +1,104 @@
+import Link from 'next/link';
+import { buildMetadata, serviceSchema, faqSchema, breadcrumbSchema } from '@/lib/seo';
+import { JsonLd } from '@/components/JsonLd';
+import { Breadcrumbs, CTABand, FAQSection } from '@/components/UI';
+
+export const metadata = buildMetadata({
+  title: 'Las Vegas Food Photographer — Menu, Delivery & Brand Photography',
+  description:
+    'Professional food photography in Las Vegas for restaurants, delivery services, and hospitality brands. Menu, editorial, and social-media-ready food photography by ExpoTraffic.',
+  path: '/services/food-photography',
+  keywords: [
+    'Las Vegas food photographer',
+    'Las Vegas restaurant photography',
+    'menu photography Las Vegas',
+    'food delivery photography',
+    'hospitality brand photography',
+  ],
+});
+
+const FAQS = [
+  {
+    q: 'Do you shoot in our restaurant or in a studio?',
+    a: 'Both. For menu photography we usually shoot on-location to keep plating fresh and to match the venue aesthetic. For brand and delivery-platform imagery we can shoot in-studio with controlled lighting.',
+  },
+  {
+    q: 'How many dishes can you shoot in a day?',
+    a: '25–40 dishes per day at menu-quality. For delivery platforms where a clean top-down setup is reusable, up to 60 dishes per day.',
+  },
+  {
+    q: 'Do you provide styling and props?',
+    a: 'Yes — basic food styling and linen/prop selection is included. For cover-level editorial work we bring in a dedicated food stylist.',
+  },
+  {
+    q: 'Can you optimize for UberEats, DoorDash, and Grubhub requirements?',
+    a: 'Absolutely. We know each platform\'s preferred crop, background, and resolution specs and deliver platform-ready exports alongside your master files.',
+  },
+];
+
+export default function FoodPhotographyPage() {
+  const trail = [
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services' },
+    { name: 'Food photography', path: '/services/food-photography' },
+  ];
+
+  return (
+    <>
+      <JsonLd
+        data={[
+          breadcrumbSchema(trail),
+          serviceSchema({
+            name: 'Las Vegas Food Photography',
+            description: 'Professional food, menu, and delivery photography for restaurants and hospitality brands in Las Vegas.',
+            path: '/services/food-photography',
+            priceLow: 1500,
+            priceHigh: 12000,
+          }),
+          faqSchema(FAQS),
+        ]}
+      />
+
+      <section className="bg-ink-50 pb-20 pt-16 lg:pb-32 lg:pt-20">
+        <div className="mx-auto max-w-[88rem] px-6 lg:px-10">
+          <Breadcrumbs trail={trail} />
+          <div className="mt-10 grid gap-16 lg:grid-cols-[1.2fr_0.8fr]">
+            <div>
+              <h1 className="font-serif text-display-xl text-ink-900">
+                Las Vegas <em className="italic text-amber-500">food</em> photography.
+              </h1>
+              <p className="mt-8 max-w-2xl text-xl leading-relaxed text-ink-700">
+                Menu, editorial, and delivery-platform photography for restaurants and hospitality brands in Las Vegas. Every plate shot to sell — on your menu, on UberEats, on Instagram, or on the video board at a food hall.
+              </p>
+              <div className="mt-10 flex flex-wrap gap-3">
+                <Link href="/contact" className="inline-flex items-center gap-2 rounded-full bg-ink-900 px-7 py-3.5 text-sm font-medium text-ink-50 hover:bg-amber-500">
+                  Book a shoot <span aria-hidden="true">→</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 md:py-32">
+        <div className="mx-auto max-w-[88rem] px-6 lg:px-10">
+          <div className="grid gap-px border-y border-ink-900/10 bg-ink-900/10 md:grid-cols-3">
+            {[
+              ['Menu photography', 'Every item on your menu shot consistently — flat-lay, 45° plating, or editorial, depending on your aesthetic.'],
+              ['Delivery platforms', 'UberEats, DoorDash, Grubhub — platform-optimized exports that lift click-through rates.'],
+              ['Brand & social', 'Hero imagery for your website, social feed, ads, and digital menu boards.'],
+            ].map(([t, d]) => (
+              <div key={t} className="bg-ink-50 p-10">
+                <h3 className="font-serif text-2xl text-ink-900">{t}</h3>
+                <p className="mt-3 text-ink-600">{d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <FAQSection items={FAQS} title="Food photography — FAQ" />
+      <CTABand headline="Menu photography that actually moves plates." />
+    </>
+  );
+}
