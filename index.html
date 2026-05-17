@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mountaingate Brentwood Homes | Luxury Real Estate in Brentwood Los Angeles | Asal Homes</title>
+  <meta name="description" content="Discover what makes Mountaingate one of Brentwood's most sought-after hillside communities — private living, resort amenities, and rare access to the best of Westside Los Angeles luxury real estate." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Georgia', serif;
+      color: #1a1a1a;
+      background: #faf9f7;
+      line-height: 1.75;
+    }
+
+    /* ── HEADER ── */
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid #e8e4df;
+      padding: 22px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .site-header .brand {
+      font-family: 'Georgia', serif;
+      font-size: 1.15rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+    .site-header .tagline {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #8a7f72;
+    }
+
+    /* ── HERO BANNER ── */
+    .post-hero {
+      background: linear-gradient(160deg, #1c2a20 0%, #2c3e2d 40%, #3a4f3b 100%);
+      color: #fff;
+      padding: 90px 40px 80px;
+      text-align: center;
+    }
+    .post-hero .eyebrow {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #b8a98e;
+      margin-bottom: 22px;
+    }
+    .post-hero h1 {
+      font-size: clamp(1.9rem, 4vw, 2.9rem);
+      font-weight: 400;
+      line-height: 1.25;
+      max-width: 780px;
+      margin: 0 auto 24px;
+      letter-spacing: 0.01em;
+    }
+    .post-hero .post-meta {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #b8a98e;
+    }
+
+    /* ── ARTICLE LAYOUT ── */
+    .journal-post {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 24px 80px;
+    }
+
+    /* ── TYPOGRAPHY ── */
+    .journal-post p {
+      font-size: 1.05rem;
+      color: #2e2e2e;
+      margin-bottom: 1.4em;
+    }
+    .journal-post h2 {
+      font-family: 'Georgia', serif;
+      font-size: 1.45rem;
+      font-weight: 400;
+      color: #1a1a1a;
+      margin: 2.8em 0 0.8em;
+      letter-spacing: 0.01em;
+      line-height: 1.3;
+    }
+    .journal-post h3 {
+      font-family: 'Georgia', serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #1a1a1a;
+      margin: 2em 0 0.6em;
+      letter-spacing: 0.01em;
+    }
+    .journal-post a {
+      color: #3a4f3b;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .journal-post a:hover { color: #1a1a1a; }
+    .journal-post strong { font-weight: 600; color: #1a1a1a; }
+
+    /* ── DIVIDER ── */
+    .post-intro {
+      border-bottom: 1px solid #e8e4df;
+      padding-bottom: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    /* ── CTA BLOCKS ── */
+    .cta-block {
+      background: #1c2a20;
+      color: #fff;
+      border-radius: 4px;
+      padding: 50px 44px;
+      margin: 3em 0;
+      text-align: center;
+    }
+    .cta-block h3 {
+      font-family: 'Georgia', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #fff;
+      margin: 0 0 1em;
+      letter-spacing: 0.01em;
+    }
+    .cta-block p {
+      font-size: 0.97rem;
+      color: #d4cfc8;
+      margin-bottom: 1.6em;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-inner { max-width: 560px; margin: 0 auto; }
+
+    .cta-button {
+      display: inline-block;
+      padding: 13px 30px;
+      background: #b8a98e;
+      color: #1a1a1a;
+      text-decoration: none;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      margin: 6px 8px;
+      transition: background 0.2s;
+    }
+    .cta-button:hover { background: #c9baa4; color: #1a1a1a; }
+    .cta-button.cta-secondary {
+      background: transparent;
+      border: 1px solid #b8a98e;
+      color: #b8a98e;
+    }
+    .cta-button.cta-secondary:hover { background: #b8a98e; color: #1a1a1a; }
+
+    /* ── FAQ ── */
+    .post-faq {
+      border-top: 1px solid #e8e4df;
+      padding-top: 2.5em;
+      margin-top: 3em;
+    }
+    .post-faq > h2 {
+      margin-top: 0;
+      margin-bottom: 1.6em;
+      font-size: 1.3rem;
+    }
+    .faq-item {
+      border-bottom: 1px solid #e8e4df;
+      padding: 1.4em 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h3 {
+      margin-top: 0;
+      margin-bottom: 0.6em;
+      font-size: 1rem;
+      color: #1c2a20;
+    }
+    .faq-item p { margin-bottom: 0; font-size: 0.97rem; color: #444; }
+
+    /* ── AUTHOR NOTE ── */
+    .post-author-note {
+      background: #f3f0eb;
+      border-left: 3px solid #b8a98e;
+      padding: 22px 26px;
+      margin-top: 3em;
+      border-radius: 0 3px 3px 0;
+    }
+    .post-author-note p {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.85rem;
+      color: #555;
+      line-height: 1.65;
+    }
+    .post-author-note a { color: #3a4f3b; }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      background: #1a1a1a;
+      color: #8a7f72;
+      text-align: center;
+      padding: 36px 24px;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .site-header { padding: 18px 20px; }
+      .post-hero { padding: 60px 20px 50px; }
+      .cta-block { padding: 36px 24px; }
+      .journal-post { padding: 40px 20px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <a class="brand" href="#">Asal Homes</a>
+    <span class="tagline">Los Angeles Luxury Real Estate</span>
+  </header>
+
+  <!-- HERO BANNER -->
+  <div class="post-hero">
+    <p class="eyebrow">Journal &nbsp;·&nbsp; Brentwood &amp; Westside Los Angeles</p>
+    <h1>The Mountaingate Lifestyle: Private Brentwood Living Above the Westside</h1>
+    <p class="post-meta">By Asal Almawy &nbsp;|&nbsp; CA DRE# 02066395</p>
+  </div>
+
+  <!-- ARTICLE -->
+  <article class="journal-post">
+
+    <section class="post-intro">
+      <p>
+        There are neighborhoods in Los Angeles that carry a certain quiet confidence — places where the landscape itself sets the tone.
+        Mountaingate, nestled into the hillsides of <a href="/neighborhoods/brentwood">Brentwood</a>, is one of them.
+        For those searching for <strong>luxury homes in Brentwood, Los Angeles</strong>, this elevated enclave offers something increasingly rare on the Westside: genuine privacy, resort-caliber amenities, and a sense of community that feels nothing like the city below.
+      </p>
+      <p>
+        This is not a neighborhood you stumble across. You arrive here intentionally — and once you do, it tends to stay with you.
+      </p>
+    </section>
+
+    <section class="post-body">
+
+      <h2>Brentwood: The Westside Neighborhood That Defines Quiet Prestige</h2>
+      <p>
+        Brentwood has long been one of Los Angeles' most enduring luxury addresses — not because of flash, but because of character.
+        The tree-lined streets, the proximity to the Santa Monica Mountains, the walkable rhythm of Brentwood Village: it all adds up to a neighborhood that attracts discerning buyers who want the best of the Westside without sacrificing residential peace.
+      </p>
+      <p>
+        <strong>Brentwood luxury real estate</strong> sits at the intersection of connectivity and calm.
+        Residents are minutes from Santa Monica, Pacific Palisades, and Westwood, with convenient access to the 405 Freeway and San Vicente Boulevard.
+        The Getty Center — one of Los Angeles' great cultural institutions — rises from the adjacent hillside, a constant reminder that this corner of the city values beauty, permanence, and perspective.
+      </p>
+      <p>
+        For buyers considering <a href="/home-search">Westside Los Angeles luxury homes</a>, Brentwood consistently ranks among the most sought-after choices — and within Brentwood, Mountaingate holds a distinct position of its own.
+      </p>
+
+      <h2>Mountaingate: A Hillside Community With Its Own Sense of Place</h2>
+      <p>
+        Spread across approximately 870 acres at the crest of the Santa Monica Mountains, Mountaingate is not simply a gated address — it is a fully realized residential world.
+        The community encompasses roughly 300 homes across a series of distinct enclaves, each with its own character, scale, and relationship to the land.
+        Whether you're drawn to the commanding single-family estates of Stoney Hill, the refined townhomes of The Ridge, or the intimate setting of The Terrace near the Country Club, <strong>Mountaingate Brentwood homes</strong> offer a range of living experiences within a single, cohesive vision.
+      </p>
+      <p>
+        What unifies every enclave is the community's foundational commitment: 24-hour security, thoughtful design, and an unmistakable sense that you are somewhere apart from the ordinary.
+        This is <strong>Brentwood hillside living</strong> at its most considered.
+      </p>
+
+      <h2>Life at Mountaingate: Amenities That Elevate the Every Day</h2>
+      <p>
+        The Mountaingate Country Club anchors the community's lifestyle in a way that few residential developments can match.
+        With 27 holes across two golf courses — one of the more celebrated private golf experiences on the Westside — along with a full-service pro shop, tennis courts, and spa facilities, the club gives residents access to a resort rhythm without leaving home.
+        This is what <strong>homes near Mountaingate Country Club</strong> genuinely mean to the people who live here.
+      </p>
+      <p>
+        Beyond the club, the community features five swimming pools, multiple clubhouses, and direct access to some of the finest hiking and biking trails in Los Angeles.
+        The Canyonback Trail begins at Mountaingate's edge, opening onto one of the most scenic stretches of the Santa Monica Mountains.
+        Sullivan Ridge, Westridge, and Temescal Ridge are all within reach — a landscape that makes mornings feel genuinely restorative.
+      </p>
+      <p>
+        For those who value views, Mountaingate delivers perspectives that span in every direction: mountain ridgelines, canyon depths, the city skyline at night, and on clear days, the Pacific on the horizon.
+        This is what <strong>private luxury living in Los Angeles</strong> can look like when the setting does as much work as the architecture.
+      </p>
+
+    </section>
+
+    <!-- MID-ARTICLE CTA -->
+    <section class="cta-block cta-mid">
+      <div class="cta-inner">
+        <h3>Exploring Homes Near Mountaingate Country Club?</h3>
+        <p>
+          Whether you are considering your first move into Brentwood or looking for a specific kind of hillside lifestyle,
+          I would love to walk you through what is available — and what may be coming to market soon.
+        </p>
+        <a href="/contact" class="cta-button">Let's Connect</a>
+        <a href="/home-search" class="cta-button cta-secondary">Explore Brentwood Homes</a>
+      </div>
+    </section>
+
+    <section class="post-body">
+
+      <h2>Location Intelligence: Where Mountaingate Sits on the Westside Map</h2>
+      <p>
+        One of Mountaingate's most underappreciated qualities is how well it travels.
+        From this hilltop address, residents can reach Beverly Hills in under fifteen minutes, Santa Monica in roughly the same, and Malibu when the mood calls for it.
+        The 405 Freeway — one of the Westside's primary arteries — is close without being intrusive.
+      </p>
+      <p>
+        Schools, restaurants, and daily amenities cluster along San Vicente Boulevard and in Brentwood Village below.
+        The Getty Center, visible from much of the surrounding hillside, is not just a neighbor — it reflects the kind of thoughtful, elevated experience that this part of Los Angeles consistently delivers.
+      </p>
+      <p>
+        For buyers with an eye on long-term value, <strong>Mountaingate Los Angeles real estate</strong> occupies a position that is genuinely difficult to replicate: a private, secured, amenity-rich community with immediate access to the full range of Westside life.
+        That combination does not exist in many places.
+      </p>
+
+      <h2>A Rare Opportunity in Mountaingate, Brentwood</h2>
+      <p>
+        Homes in Mountaingate move quietly.
+        They tend to trade through trusted relationships — between agents who know the community and buyers who have been watching it carefully.
+        When a property becomes available here, particularly one that has not yet entered the public market, the window is typically short.
+      </p>
+      <p>
+        If you have been considering <strong>luxury real estate in Brentwood</strong> — or if Mountaingate has been on your radar — now is a meaningful time for a conversation.
+        I work with buyers who prefer to move thoughtfully, not reactively, and I am happy to share what I am seeing in this market before it becomes headline news.
+      </p>
+      <p>
+        My background spans some of the most competitive luxury markets in the world — from the iconic towers of Dubai to the hillside communities of Brentwood and Bel Air — and that perspective shapes how I approach every search.
+        <strong>Brentwood gated community homes</strong> like those at Mountaingate reward buyers who know how to read an opportunity.
+        I can help you do exactly that.
+      </p>
+
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="cta-block cta-final">
+      <div class="cta-inner">
+        <h3>Begin Your Mountaingate Search With Asal</h3>
+        <p>
+          For a private conversation about Mountaingate, Brentwood, or Westside Los Angeles luxury homes,
+          I invite you to connect directly. Every search I guide is treated with discretion, care, and the full weight of my market knowledge.
+          Your next chapter deserves that.
+        </p>
+        <a href="/contact" class="cta-button">Book an Appointment</a>
+        <a href="/home-valuation" class="cta-button cta-secondary">Get a Home Valuation</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="post-faq">
+      <h2>Frequently Asked Questions About Mountaingate and Brentwood Luxury Real Estate</h2>
+
+      <div class="faq-item">
+        <h3>What makes Mountaingate different from other Brentwood communities?</h3>
+        <p>
+          Mountaingate is Brentwood's only large-scale, resort-style residential enclave.
+          Unlike the flat streets of lower Brentwood, Mountaingate sits at the crest of the Santa Monica Mountains and offers 24-hour security, a private country club with golf and tennis, multiple pools, and direct trail access — all within a single, cohesive community.
+          Very few addresses on the Westside offer this combination of privacy and amenity at this scale.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What types of homes are available in Mountaingate, Los Angeles?</h3>
+        <p>
+          Mountaingate encompasses a range of home styles across roughly twelve distinct enclaves.
+          Options range from spacious single-family estates — some exceeding 6,500 square feet in the most exclusive sections — to refined townhomes and condominium residences in settings like The Ridge and The Terrace.
+          Each enclave has its own character, price point, and relationship to the surrounding landscape.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Is Mountaingate a gated community?</h3>
+        <p>
+          Yes. Mountaingate operates with 24-hour guard-gated security, which is a defining feature of the community's lifestyle and one of the primary reasons it appeals to buyers seeking genuine privacy in Los Angeles.
+          The community's controlled access is paired with a strong HOA structure that maintains shared amenities and common areas throughout the development.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How far is Mountaingate from Beverly Hills and Santa Monica?</h3>
+        <p>
+          Mountaingate's Brentwood hillside location puts Beverly Hills approximately ten to fifteen minutes away via Sunset Boulevard or the 405 Freeway.
+          Santa Monica is similarly accessible.
+          Malibu, Pacific Palisades, and Westwood are all within comfortable reach, making Mountaingate one of the more strategically positioned luxury communities on the Westside.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I find out about off-market or pre-market luxury homes in Brentwood?</h3>
+        <p>
+          Many of the most desirable <strong>luxury homes in Brentwood, Los Angeles</strong> — including those in Mountaingate — are bought and sold through trusted agent relationships before they ever appear publicly.
+          Working with an advisor who is active and connected in this specific market is the most reliable way to access those opportunities.
+          <a href="/contact">Connect with Asal</a> for a private conversation about what may be available now or coming to market soon.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- AUTHOR NOTE -->
+    <section class="post-author-note">
+      <p>
+        <strong>Asal Almawy</strong> is a Los Angeles luxury real estate advisor with international experience spanning Dubai, Beirut, and beyond.
+        She specializes in Brentwood, Bel Air, Beverly Hills, Pacific Palisades, and the broader Westside Los Angeles market.
+        CA DRE# 02066395. <a href="/contact">Let's Connect.</a>
+      </p>
+    </section>
+
+  </article>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Asal Homes &nbsp;·&nbsp; Asal Almawy, CA DRE# 02066395 &nbsp;·&nbsp; Los Angeles Luxury Real Estate</p>
+  </footer>
+
+</body>
+</html>
