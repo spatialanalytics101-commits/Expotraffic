@@ -4,17 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>12386 Ridge Cir | Mountaingate Brentwood Luxury Living | Asal Homes</title>
-  <meta name="description" content="Explore the lifestyle appeal of 12386 Ridge Cir in Mountaingate, Brentwood — a private Los Angeles setting shaped by classical architecture, hillside living, Westside access, and refined everyday convenience." />
+  <meta name="description" content="Explore 12386 Ridge Cir in Mountaingate, Brentwood — a classical home with a private walled garden, grand foyer, chef's kitchen, and direct access to Westside Los Angeles." />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --ink:     #1a1a1a;
-      --warm:    #f7f5f2;
-      --border:  #e5e0d8;
-      --gold:    #b8a98e;
-      --forest:  #1c2a20;
-      --muted:   #6b6560;
+      --ink:    #1a1a1a;
+      --warm:   #f7f5f2;
+      --border: #e5e0d8;
+      --gold:   #b8a98e;
+      --forest: #1c2a20;
+      --muted:  #6b6560;
     }
 
     body {
@@ -24,7 +24,7 @@
       line-height: 1.78;
     }
 
-    /* ── SITE HEADER ── */
+    /* HEADER */
     .site-header {
       background: #fff;
       border-bottom: 1px solid var(--border);
@@ -44,10 +44,7 @@
       color: var(--ink);
       text-decoration: none;
     }
-    .site-header nav {
-      display: flex;
-      gap: 28px;
-    }
+    .site-header nav { display: flex; gap: 28px; }
     .site-header nav a {
       font-family: 'Helvetica Neue', Arial, sans-serif;
       font-size: 0.68rem;
@@ -58,7 +55,7 @@
     }
     .site-header nav a:hover { color: var(--ink); }
 
-    /* ── HERO ── */
+    /* HERO */
     .post-hero {
       position: relative;
       background: var(--forest);
@@ -106,12 +103,11 @@
       color: var(--gold);
     }
 
-    /* ── VIDEO EMBED ── */
+    /* VIDEO */
     .video-wrap {
       background: #000;
       display: flex;
       justify-content: center;
-      padding: 0;
     }
     .video-wrap iframe,
     .video-placeholder {
@@ -126,22 +122,22 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #888;
+      color: #666;
       font-family: 'Helvetica Neue', Arial, sans-serif;
-      font-size: 0.78rem;
+      font-size: 0.75rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      min-height: 360px;
+      min-height: 320px;
     }
 
-    /* ── ARTICLE LAYOUT ── */
+    /* ARTICLE */
     .journal-post {
       max-width: 800px;
       margin: 0 auto;
       padding: 64px 24px 80px;
     }
 
-    /* ── TYPOGRAPHY ── */
+    /* TYPOGRAPHY */
     .journal-post p {
       font-size: 1.05rem;
       color: #2e2a27;
@@ -149,10 +145,10 @@
     }
     .journal-post h2 {
       font-family: 'Georgia', serif;
-      font-size: 1.5rem;
+      font-size: 1.45rem;
       font-weight: 400;
       color: var(--ink);
-      margin: 3em 0 0.8em;
+      margin: 2.8em 0 0.8em;
       line-height: 1.28;
     }
     .journal-post h3 {
@@ -160,7 +156,7 @@
       font-size: 1.05rem;
       font-weight: 400;
       color: var(--forest);
-      margin: 2em 0 0.5em;
+      margin: 1.8em 0 0.5em;
     }
     .journal-post a {
       color: var(--forest);
@@ -170,53 +166,50 @@
     .journal-post a:hover { color: var(--ink); }
     .journal-post strong { font-weight: 600; }
 
-    /* ── INTRO LEAD ── */
+    /* INTRO */
     .post-intro {
       border-bottom: 1px solid var(--border);
       padding-bottom: 2.5em;
       margin-bottom: 0.5em;
     }
     .post-intro p:first-child {
-      font-size: 1.18rem;
+      font-size: 1.15rem;
       line-height: 1.72;
       color: var(--ink);
     }
 
-    /* ── PROPERTY DETAIL STRIP ── */
+    /* DETAIL STRIP */
     .detail-strip {
       display: flex;
-      gap: 0;
       border: 1px solid var(--border);
       border-radius: 3px;
       overflow: hidden;
       margin: 2.5em 0;
     }
-    .detail-strip .detail-item {
+    .detail-item {
       flex: 1;
-      padding: 18px 20px;
+      padding: 16px 20px;
       text-align: center;
       border-right: 1px solid var(--border);
     }
-    .detail-strip .detail-item:last-child { border-right: none; }
-    .detail-strip .detail-label {
+    .detail-item:last-child { border-right: none; }
+    .detail-label {
       font-family: 'Helvetica Neue', Arial, sans-serif;
-      font-size: 0.62rem;
+      font-size: 0.6rem;
       letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--muted);
       display: block;
       margin-bottom: 5px;
     }
-    .detail-strip .detail-value {
+    .detail-value {
       font-family: 'Georgia', serif;
-      font-size: 0.95rem;
+      font-size: 0.93rem;
       color: var(--ink);
     }
 
-    /* ── INLINE IMAGES ── */
-    .post-image {
-      margin: 2.5em 0;
-    }
+    /* IMAGES */
+    .post-image { margin: 2.5em 0; }
     .post-image img {
       width: 100%;
       display: block;
@@ -244,63 +237,41 @@
       max-height: 520px;
       object-fit: cover;
     }
-    .img-caption {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      font-size: 0.68rem;
-      letter-spacing: 0.08em;
-      color: var(--muted);
-      margin-top: 8px;
-      text-align: center;
-    }
 
-    /* ── PULL QUOTE ── */
-    .pull-quote {
-      border-left: 3px solid var(--gold);
-      margin: 2.5em 0;
-      padding: 4px 0 4px 28px;
-    }
-    .pull-quote p {
-      font-size: 1.22rem;
-      line-height: 1.55;
-      color: var(--forest);
-      font-style: italic;
-      margin: 0;
-    }
-
-    /* ── CTA BLOCKS ── */
+    /* CTA BLOCKS */
     .cta-block {
       background: var(--forest);
       color: #fff;
       border-radius: 3px;
-      padding: 52px 48px;
+      padding: 50px 44px;
       margin: 3.5em 0;
       text-align: center;
     }
-    .cta-inner { max-width: 560px; margin: 0 auto; }
+    .cta-inner { max-width: 540px; margin: 0 auto; }
     .cta-block h3 {
       font-family: 'Georgia', serif;
-      font-size: 1.35rem;
+      font-size: 1.3rem;
       font-weight: 400;
       color: #fff;
-      margin: 0 0 1em;
+      margin: 0 0 0.9em;
     }
     .cta-block p {
       font-size: 0.97rem;
-      color: #d0cac1;
+      color: #cdc7bf;
       margin-bottom: 1.8em;
     }
     .cta-button {
       display: inline-block;
-      padding: 13px 30px;
+      padding: 13px 28px;
       background: var(--gold);
       color: var(--ink);
       text-decoration: none;
       font-family: 'Helvetica Neue', Arial, sans-serif;
-      font-size: 0.68rem;
+      font-size: 0.67rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       border-radius: 2px;
-      margin: 6px 8px;
+      margin: 6px 7px;
       transition: background 0.2s;
     }
     .cta-button:hover { background: #cbbda7; color: var(--ink); }
@@ -311,27 +282,27 @@
     }
     .cta-button.outline:hover { background: var(--gold); color: var(--ink); }
 
-    /* ── FAQ ── */
+    /* FAQ */
     .post-faq {
       border-top: 1px solid var(--border);
       padding-top: 3em;
       margin-top: 3.5em;
     }
-    .post-faq > h2 { margin-top: 0; font-size: 1.25rem; margin-bottom: 1.8em; }
+    .post-faq > h2 { margin-top: 0; font-size: 1.25rem; margin-bottom: 1.6em; }
     .faq-item {
       border-bottom: 1px solid var(--border);
-      padding: 1.5em 0;
+      padding: 1.4em 0;
     }
     .faq-item:last-child { border-bottom: none; }
     .faq-item h3 {
       margin-top: 0;
-      margin-bottom: 0.7em;
+      margin-bottom: 0.6em;
       font-size: 1rem;
       color: var(--forest);
     }
     .faq-item p { margin-bottom: 0; font-size: 0.97rem; color: #444; }
 
-    /* ── AUTHOR NOTE ── */
+    /* AUTHOR NOTE */
     .author-note {
       background: var(--warm);
       border-left: 3px solid var(--gold);
@@ -347,42 +318,40 @@
       line-height: 1.65;
     }
 
-    /* ── SITE FOOTER ── */
+    /* FOOTER */
     .site-footer {
       background: var(--ink);
       color: #6b6560;
       text-align: center;
       padding: 36px 24px;
       font-family: 'Helvetica Neue', Arial, sans-serif;
-      font-size: 0.68rem;
+      font-size: 0.67rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
     }
     .site-footer a { color: var(--gold); text-decoration: none; }
 
-    /* ── RESPONSIVE ── */
+    /* RESPONSIVE */
     @media (max-width: 640px) {
       .site-header { padding: 16px 20px; }
       .site-header nav { display: none; }
       .post-hero-img { height: 360px; }
       .post-hero-overlay { padding: 0 20px 40px; }
-      .cta-block { padding: 36px 24px; }
+      .cta-block { padding: 36px 22px; }
       .journal-post { padding: 40px 20px 60px; }
-      .post-image.half, .post-image.trio {
-        grid-template-columns: 1fr;
-      }
-      .post-image.half img, .post-image.trio img { height: 260px; }
+      .post-image.half,
+      .post-image.trio { grid-template-columns: 1fr; }
+      .post-image.half img,
+      .post-image.trio img { height: 250px; }
       .detail-strip { flex-direction: column; }
-      .detail-strip .detail-item { border-right: none; border-bottom: 1px solid var(--border); }
-      .detail-strip .detail-item:last-child { border-bottom: none; }
+      .detail-item { border-right: none; border-bottom: 1px solid var(--border); }
+      .detail-item:last-child { border-bottom: none; }
     }
   </style>
 </head>
 <body>
 
-<!-- ══════════════════════════════════════
-     SITE HEADER
-══════════════════════════════════════ -->
+<!-- HEADER -->
 <header class="site-header">
   <a class="brand" href="#">Asal Homes</a>
   <nav>
@@ -394,57 +363,48 @@
   </nav>
 </header>
 
-<!-- ══════════════════════════════════════
-     HERO IMAGE
-══════════════════════════════════════ -->
+<!-- HERO -->
 <div class="post-hero">
   <img
     class="post-hero-img"
-    src="26662013_66f97bd2-e015-4829-86b1-619ef4c360c3.jpg"
-    alt="12386 Ridge Cir — red brick home in The Ridge at Mountaingate, Brentwood Los Angeles"
+    src="images/12386-ridge-cir-exterior.jpg"
+    alt="12386 Ridge Cir exterior, The Ridge at Mountaingate, Brentwood"
     loading="eager"
   />
   <div class="post-hero-overlay">
-    <p class="eyebrow">Journal &nbsp;·&nbsp; The Ridge at Mountaingate &nbsp;·&nbsp; Brentwood, Los Angeles</p>
+    <p class="eyebrow">Journal &nbsp;&middot;&nbsp; The Ridge at Mountaingate &nbsp;&middot;&nbsp; Brentwood, Los Angeles</p>
     <h1>12386 Ridge Cir: Private Mountaingate Living in Brentwood, Los Angeles</h1>
-    <p class="post-meta">By Asal Almawy &nbsp;|&nbsp; Brentwood &amp; Westside Los Angeles Luxury Real Estate &nbsp;|&nbsp; CA DRE# 02066395</p>
+    <p class="post-meta">By Asal Almawy &nbsp;|&nbsp; Brentwood and Westside Los Angeles Luxury Real Estate &nbsp;|&nbsp; CA DRE# 02066395</p>
   </div>
 </div>
 
-<!-- ══════════════════════════════════════
-     VIDEO EMBED (after H1 / below hero)
-══════════════════════════════════════ -->
+<!-- VIDEO -->
 <div class="video-wrap">
-  <!-- REPLACE src WITH YOUR VIDEO EMBED URL e.g. https://www.youtube.com/embed/VIDEO_ID -->
-  <div class="video-placeholder">[ Property Video — Paste Embed URL Here ]</div>
-  <!-- Example when ready:
+  <!-- Replace this placeholder with your embed when ready:
   <iframe
     src="https://www.youtube.com/embed/VIDEO_ID"
-    title="12386 Ridge Cir — Mountaingate Brentwood property video"
+    title="12386 Ridge Cir Mountaingate Brentwood property tour"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
   -->
+  <div class="video-placeholder">Property Video Coming Soon</div>
 </div>
 
-<!-- ══════════════════════════════════════
-     ARTICLE
-══════════════════════════════════════ -->
+<!-- ARTICLE -->
 <article class="journal-post">
 
   <!-- INTRO -->
   <section class="post-intro">
     <p>
-      There is a particular kind of home that announces itself quietly — not through spectacle, but through presence.
-      12386 Ridge Cir is that kind of address.
-      Positioned within The Ridge, one of Mountaingate's most established enclaves in <a href="/neighborhoods/brentwood">Brentwood</a>,
-      this property carries the architectural confidence of a home built for how people actually live: with space to gather, room to retreat, and a private garden world that the city never quite reaches.
+      12386 Ridge Cir sits within The Ridge, a guard-gated enclave inside Mountaingate in Brentwood.
+      The architecture is classical, the proportions generous, and the walled garden beyond the main living spaces keeps the pace of the Westside at a comfortable remove.
+      For buyers considering <strong>luxury homes in Brentwood, Los Angeles</strong>, it is a setting worth looking at closely.
     </p>
     <p>
-      For buyers drawn to <strong>luxury homes in Brentwood, Los Angeles</strong> — the kind of homes that offer both community and seclusion — this is a rare opportunity to step into one of the Westside's most respected private settings.
+      The home presents a strong architectural foundation with clear potential to personalize. The bones are there. The setting is established.
     </p>
 
-    <!-- PROPERTY DETAIL STRIP -->
     <div class="detail-strip">
       <div class="detail-item">
         <span class="detail-label">Address</span>
@@ -465,121 +425,150 @@
     </div>
   </section>
 
-  <!-- SECTION 1 -->
+  <!-- SECTION 1: Arrival -->
   <section>
-    <h2>A Brentwood Address With a Private Mountaingate Setting</h2>
+    <h2>Arriving at 12386 Ridge Cir</h2>
     <p>
-      Reaching 12386 Ridge Cir means passing through something most Brentwood addresses cannot offer: a manned entry gate that separates the community from the city below.
-      The Ridge at Mountaingate carries its own rhythm — tree-lined streets, well-maintained common areas, and a residential calm that feels intentional rather than incidental.
+      Getting to 12386 Ridge Cir means passing through a manned entry gate into The Ridge, a setting that stands apart within the Brentwood market.
+      The enclave has its own dedicated gate within the broader Mountaingate security structure. The streets curve gently upward through mature landscaping, and the pace feels genuinely removed from the neighborhoods below.
     </p>
     <p>
-      Mountaingate spans around 870 acres at the crest of the Santa Monica Mountains, and The Ridge is among its more established enclaves.
-      For buyers considering <strong>Brentwood gated community homes</strong>, arriving here makes a quiet but unmistakable impression.
+      Mountaingate is a private Brentwood hillside community with 298 residences across five distinct communities, shaped around 24-hour security, recreational amenities, and access to the Santa Monica Mountains. The Ridge is one of those communities.
     </p>
 
-    <!-- Community image pair -->
     <div class="post-image half">
       <img
-        src="26662013_b354ef07-1652-46e3-8b99-a97f282f0726.jpg"
-        alt="Mountaingate Brentwood stone entry monument with flowering landscaping"
+        src="images/mountaingate-brentwood-sign.jpg"
+        alt="Mountaingate Brentwood entry monument sign"
         loading="lazy"
       />
       <img
-        src="26662013_453951fc-b55e-4fda-bce8-016ae9b204ad.jpg"
-        alt="The Ridge at Mountaingate community entry sign and garden"
+        src="images/the-ridge-mountaingate-sign.jpg"
+        alt="The Ridge at Mountaingate community entry sign"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="post-image half">
+      <img
+        src="images/the-ridge-guard-gate.jpg"
+        alt="The Ridge guard gate and entry at Mountaingate"
+        loading="lazy"
+      />
+      <img
+        src="images/mountaingate-entry-road.jpg"
+        alt="Winding entry road into Mountaingate Brentwood"
         loading="lazy"
       />
     </div>
   </section>
 
-  <!-- SECTION 2 -->
+  <!-- SECTION 2: Exterior -->
   <section>
-    <h2>First Impressions: The Arrival at 12386 Ridge Cir</h2>
+    <h2>The Property: Exterior and Entry</h2>
     <p>
-      The home announces itself through restraint: a classic red-brick Georgian facade, framed by mature hedges and an ornamental iron entry gate bearing the address in relief.
-      A brick herringbone walkway leads through manicured boxwood and beneath a canopy of established trees to a substantial dark-wood double entry door.
-      The architecture is traditional in the most deliberate sense — each element chosen for proportion and permanence rather than trend.
+      The home is built in classic red brick with a hip slate roof and chimney, traditional in its proportions and well-settled into its site.
+      A decorative iron gate with the street number in relief opens onto a herringbone brick walkway, which leads through manicured boxwood and mature trees to a substantial dark-wood double front door.
+      An attached two-car garage integrates cleanly into the facade.
     </p>
 
-    <!-- Entry gate + front door + exterior facade -->
     <div class="post-image trio">
       <img
-        src="26662013_5a71814c-7a25-4177-92f2-cd0df6a45d64.jpg"
-        alt="Iron entry gate with 12386 address plaque and brick paver walkway, Mountaingate Brentwood"
+        src="images/12386-ridge-cir-entry-gate.jpg"
+        alt="Iron entry gate with address plaque at 12386 Ridge Cir"
         loading="lazy"
       />
       <img
-        src="26662013_645a1d9f-b231-44df-b8d2-4958d6903f14.jpg"
-        alt="Dark wood double entry doors through mature landscaping at 12386 Ridge Cir"
+        src="images/12386-ridge-cir-front-door.jpg"
+        alt="Front door through mature landscaping at 12386 Ridge Cir"
         loading="lazy"
       />
       <img
-        src="26662013_12a77cff-0fdf-47df-83f5-2b6bc3dbe8cc.jpg"
-        alt="Red brick Georgian exterior with wrought iron balcony, 12386 Ridge Cir Mountaingate"
+        src="images/12386-ridge-cir-exterior-balcony.jpg"
+        alt="Red brick exterior with wrought iron balcony, 12386 Ridge Cir"
         loading="lazy"
       />
     </div>
 
     <p>
-      From the street, the two-story brick silhouette — with its wrought-iron Juliet balcony, slate-grey hip roof, and chimneys — reads as the kind of home that has earned its place in the landscape.
-      The attached two-car garage integrates cleanly into the facade, and the surrounding greenery provides a natural privacy screen without diminishing the curb presence.
+      On the upper floor, a wrought-iron balcony is visible from the rear garden. The surrounding hedges and established canopy trees provide natural screening and contribute to the sense of enclosure within the property itself.
     </p>
+
+    <div class="post-image half">
+      <img
+        src="images/12386-ridge-cir-rear-garden.jpg"
+        alt="Rear garden with specimen tree and balcony at 12386 Ridge Cir"
+        loading="lazy"
+      />
+      <img
+        src="images/12386-ridge-cir-exterior-rear.jpg"
+        alt="Rear exterior view of 12386 Ridge Cir with garden terrace"
+        loading="lazy"
+      />
+    </div>
   </section>
 
-  <!-- SECTION 3: Interior / Foyer -->
+  <!-- SECTION 3: Foyer and Living -->
   <section>
-    <h2>Inside: Scale, Light, and a Grand Entry</h2>
+    <h2>Inside: Foyer, Scale, and Natural Light</h2>
     <p>
-      Entry into 12386 Ridge Cir is through one of its most memorable architectural gestures: a two-story circular foyer anchored by a sweeping curved staircase, rich warm-toned hardwood floors, and a dramatic wrought-iron chandelier that draws the eye upward through the full height of the space.
-      This is the kind of arrival that sets expectations — and the interior consistently meets them.
+      Entry is into a two-story circular foyer with a sweeping curved staircase, warm hardwood floors, and a wrought-iron chandelier suspended through the full height of the space.
+      It is the kind of architectural gesture that sets a clear tone for the rest of the home.
     </p>
 
-    <!-- Foyer / staircase hero -->
     <div class="post-image wide">
       <img
-        src="26662013_db8fa8f4-4e0a-4549-b119-8bb548bf653a.jpg"
-        alt="Two-story circular foyer with curved staircase and chandelier, 12386 Ridge Cir Brentwood"
+        src="images/12386-ridge-cir-grand-foyer.jpg"
+        alt="Grand two-story foyer with curved staircase at 12386 Ridge Cir"
         loading="lazy"
       />
     </div>
 
-    <div class="post-image half">
+    <div class="post-image trio">
       <img
-        src="26662013_26efbd11-7ae6-46b7-8d91-9395e910bae1.jpg"
-        alt="Staircase and chandelier from below, grand foyer at 12386 Ridge Cir"
+        src="images/12386-ridge-cir-foyer-staircase.jpg"
+        alt="Curved staircase and chandelier in the foyer at 12386 Ridge Cir"
         loading="lazy"
       />
       <img
-        src="26662013_b4d6749a-4ee4-434b-bcba-225aaefcbed3.jpg"
-        alt="Curved staircase with wood railings and chandelier, Mountaingate Brentwood"
+        src="images/12386-ridge-cir-staircase-detail.jpg"
+        alt="Staircase detail with wood railings and chandelier"
+        loading="lazy"
+      />
+      <img
+        src="images/12386-ridge-cir-foyer-entry.jpg"
+        alt="Foyer entry view toward front door at 12386 Ridge Cir"
         loading="lazy"
       />
     </div>
 
     <p>
-      Beyond the foyer, the scale of the home opens fully.
-      The great room rises to a dramatic double height, with floor-to-ceiling multi-pane windows flooding the space with natural light and framing a private green landscape beyond.
-      A white marble fireplace anchors one wall; French doors along the opposite wall open directly to the garden terrace, creating a natural indoor-outdoor flow that Southern California living is built around.
+      The great room beyond rises to a double height, with floor-to-ceiling multi-pane windows pulling in natural light and framing a green garden view.
+      A marble fireplace with a classical white mantle anchors one wall. French doors on the opposite side open to the garden terrace, creating a direct indoor-outdoor connection through the main living space.
     </p>
 
-    <!-- Living room -->
     <div class="post-image wide">
       <img
-        src="26662013_0ca0f111-0e16-483d-88aa-b1c01b3cd801.jpg"
-        alt="Double-height great room with floor-to-ceiling windows, fireplace, and French doors to garden, 12386 Ridge Cir"
+        src="images/12386-ridge-cir-living-room.jpg"
+        alt="Double-height great room with fireplace and French doors, 12386 Ridge Cir"
         loading="lazy"
       />
     </div>
 
-    <div class="post-image half">
+    <div class="post-image trio">
       <img
-        src="26662013_84eebabb-6d69-4b00-8750-296160008cc4.jpg"
-        alt="Living room fireplace with view toward foyer staircase, Mountaingate Brentwood"
+        src="images/12386-ridge-cir-living-room-fireplace.jpg"
+        alt="Living room with marble fireplace, 12386 Ridge Cir"
         loading="lazy"
       />
       <img
-        src="26662013_515ef2a1-a47d-40b8-ae7b-010e9e03cbd9.jpg"
-        alt="Interconnected living spaces with French doors and chandelier, 12386 Ridge Cir"
+        src="images/12386-ridge-cir-living-spaces.jpg"
+        alt="Open living spaces with chandelier and French doors, 12386 Ridge Cir"
+        loading="lazy"
+      />
+      <img
+        src="images/12386-ridge-cir-living-room-alt.jpg"
+        alt="Living room view toward garden terrace, 12386 Ridge Cir"
         loading="lazy"
       />
     </div>
@@ -587,44 +576,46 @@
 
   <!-- SECTION 4: Kitchen -->
   <section>
-    <h2>The Kitchen: A Space Built Around Gathering</h2>
+    <h2>The Kitchen</h2>
     <p>
-      The kitchen at 12386 Ridge Cir is designed with the serious host in mind.
-      A large center island in warm cherry wood — fitted with a gas cooktop and topped in marble-toned stone — sits beneath a professional stainless steel range hood.
-      White perimeter cabinetry lines the walls with generous storage; a bay window arrangement above the main sink draws in garden light and greenery from multiple angles.
+      The kitchen is centered on a large cherry-wood island with an integrated gas cooktop and a professional stainless steel range hood.
+      White perimeter cabinetry provides substantial storage; a bay window above the main sink looks out to the garden.
+      A French door from the kitchen opens directly to the terrace, which works well for casual indoor-outdoor meals.
     </p>
 
-    <!-- Kitchen images -->
     <div class="post-image wide">
       <img
-        src="26662013_08954e3e-2a37-4199-96c5-379c6f37dc6b.jpg"
-        alt="Kitchen with island, gas cooktop, range hood, and French door to garden, 12386 Ridge Cir"
+        src="images/12386-ridge-cir-kitchen.jpg"
+        alt="Kitchen with island, gas cooktop, and French door to garden at 12386 Ridge Cir"
         loading="lazy"
       />
     </div>
 
-    <div class="post-image trio">
+    <div class="post-image half">
       <img
-        src="26662013_2938661b-c170-461e-900c-77c92bf0bd10.jpg"
-        alt="Kitchen island with gas cooktop and stainless hood, Mountaingate Brentwood"
+        src="images/12386-ridge-cir-kitchen-island.jpg"
+        alt="Kitchen island with gas cooktop, 12386 Ridge Cir"
         loading="lazy"
       />
       <img
-        src="26662013_314b5cfe-5dc0-4c5d-a95a-97fda0674735.jpg"
-        alt="Bay window above kitchen sink overlooking garden, 12386 Ridge Cir"
-        loading="lazy"
-      />
-      <img
-        src="26662013_30587fbe-66ac-4ade-9a55-0596e3ed5bf9.jpg"
-        alt="Kitchen with white cabinetry, wood island, and hardwood floors, Brentwood"
+        src="images/12386-ridge-cir-kitchen-windows.jpg"
+        alt="Bay window kitchen area overlooking garden, 12386 Ridge Cir"
         loading="lazy"
       />
     </div>
 
-    <p>
-      A French door from the kitchen opens to the garden terrace, making indoor-outdoor dining a natural extension of the space.
-      The overall feel is generous without being impractical — well-suited to a quiet weekday morning and a larger gathering equally.
-    </p>
+    <div class="post-image half">
+      <img
+        src="images/12386-ridge-cir-kitchen-wide.jpg"
+        alt="Full kitchen view with white cabinetry and hardwood floors, 12386 Ridge Cir"
+        loading="lazy"
+      />
+      <img
+        src="images/12386-ridge-cir-kitchen-cooktop.jpg"
+        alt="Kitchen cooktop island and range hood detail, 12386 Ridge Cir"
+        loading="lazy"
+      />
+    </div>
   </section>
 
   <!-- MID-ARTICLE CTA -->
@@ -632,40 +623,39 @@
     <div class="cta-inner">
       <h3>Interested in 12386 Ridge Cir?</h3>
       <p>
-        This property is available for private inquiry. For details on the home, the community, or comparable
-        <strong>Mountaingate Brentwood homes</strong>, I invite you to connect directly.
-        Every conversation begins with listening.
+        For details on the home, the community, or comparable <strong>Mountaingate Brentwood homes</strong>,
+        connect with Asal directly. Every conversation begins with listening.
       </p>
       <a href="/contact" class="cta-button">Let's Connect</a>
       <a href="/home-search" class="cta-button outline">Explore Brentwood Homes</a>
     </div>
   </section>
 
-  <!-- SECTION 5: Study + Formal Room -->
+  <!-- SECTION 5: Additional Rooms -->
   <section>
-    <h2>Rooms With a Point of View</h2>
+    <h2>Additional Rooms</h2>
     <p>
-      Two additional rooms speak to the home's depth of character.
-      The formal sitting room — with its coffered ceiling detail, crystal chandelier, leaded glass cabinet inserts, and French doors opening to the garden — offers the kind of space that moves between uses easily: a reading room, a formal dining setting, a music room.
+      A formal sitting room with a coffered ceiling, crystal chandelier, and leaded glass cabinet inserts opens via French doors to the garden.
+      The room adapts easily across uses: reading, dining, or a quieter receiving space.
     </p>
 
     <div class="post-image wide">
       <img
-        src="26662013_4d540d6b-b492-420d-b944-59403769c22b.jpg"
-        alt="Formal sitting room with coffered ceiling, chandelier, leaded glass, and French doors to garden, 12386 Ridge Cir"
+        src="images/12386-ridge-cir-sitting-room.jpg"
+        alt="Formal sitting room with coffered ceiling and French doors at 12386 Ridge Cir"
         loading="lazy"
       />
     </div>
 
     <p>
-      The study — paneled floor-to-ceiling in dark wood with exposed beam vaulting — is anchored by a carved ornamental fireplace and opens via French doors to a private courtyard.
-      Full-wall built-in shelving creates an environment suited to focused work or quiet retreat.
+      The study is paneled floor-to-ceiling in dark wood with exposed beam vaulting, full-wall built-in shelving, and an ornate carved fireplace.
+      French doors lead to a private courtyard. For buyers who need dedicated space for focused work or want a room that functions as a proper library, this one is well-suited to both.
     </p>
 
     <div class="post-image wide">
       <img
-        src="26662013_ea20504d-fc53-498d-9327-1462c6a6a504.jpg"
-        alt="Wood-paneled study with built-in shelves, carved fireplace, beamed ceiling, and French doors, 12386 Ridge Cir"
+        src="images/12386-ridge-cir-study.jpg"
+        alt="Wood-paneled study with built-in shelves and carved fireplace at 12386 Ridge Cir"
         loading="lazy"
       />
     </div>
@@ -673,153 +663,140 @@
 
   <!-- SECTION 6: Primary Suite -->
   <section>
-    <h2>The Primary Suite: A Private Retreat Above the Garden</h2>
+    <h2>Primary Suite</h2>
     <p>
-      The primary bedroom suite at 12386 Ridge Cir is oriented toward the garden.
-      French doors open to the wrought-iron Juliet balcony visible on the home's exterior facade, inviting morning air and green treetop views into the room.
-      A second window faces the same lush landscape, and the built-in wood armoire offers substantial wardrobe accommodation within the room itself.
+      The primary bedroom faces the garden. French doors open to the wrought-iron balcony visible from the exterior, bringing in morning light and treetop views.
+      A built-in wood armoire provides wardrobe storage within the room.
     </p>
 
     <div class="post-image wide">
       <img
-        src="26662013_0b1cc192-8546-4492-b635-21c7abdba351.jpg"
-        alt="Primary bedroom with French doors to balcony, garden views, and built-in armoire, 12386 Ridge Cir"
+        src="images/12386-ridge-cir-primary-bedroom.jpg"
+        alt="Primary bedroom with French doors to balcony and garden views, 12386 Ridge Cir"
         loading="lazy"
       />
     </div>
 
     <p>
-      The primary bathroom is generous in both scale and intention — a mosaic penny-tile soaking tub platform, separate glass-enclosed shower, double vanity with white cabinetry, mirrored ceiling, and garden-facing windows.
+      The primary bath is generous in scale. A mosaic penny-tile soaking tub platform sits at the center; a separate glass-enclosed shower, double vanity with white cabinetry, mirrored ceiling, and garden-facing windows complete the room.
     </p>
 
     <div class="post-image half">
       <img
-        src="26662013_128d9f04-8e4c-49fc-bc24-cabd269cafa1.jpg"
-        alt="Primary bath with mosaic tile soaking tub, mirrored ceiling, and double vanity, 12386 Ridge Cir"
+        src="images/12386-ridge-cir-primary-bath.jpg"
+        alt="Primary bath with mosaic tile soaking tub and double vanity, 12386 Ridge Cir"
         loading="lazy"
       />
       <img
-        src="26662013_dcb38e08-a717-44ad-832b-ce7c76c6996d.jpg"
-        alt="Primary bath glass-enclosed shower with mosaic tile, 12386 Ridge Cir Brentwood"
+        src="images/12386-ridge-cir-bath-shower.jpg"
+        alt="Primary bath glass-enclosed shower with mosaic tile, 12386 Ridge Cir"
         loading="lazy"
       />
     </div>
   </section>
 
-  <!-- SECTION 7: Outdoor Spaces -->
+  <!-- SECTION 7: Garden -->
   <section>
-    <h2>The Garden: A Private World Beyond the Threshold</h2>
+    <h2>The Garden</h2>
     <p>
-      The walled garden at 12386 Ridge Cir — accessible from multiple interior rooms — is a composed environment: a decorative fountain, brick pavers, mature trees, and potted plantings that bring a sense of enclosure and calm.
-      A pergola frames the passage between spaces, and a rear lawn surrounds a well-established specimen tree.
-      The brick terrace connects directly to the great room through its full-height glass wall, completing the indoor-outdoor flow.
+      The property includes a walled garden courtyard accessible from multiple interior rooms. A decorative wall fountain, brick pavers, mature trees, and container plantings give the space a composed, enclosed quality.
+      A pergola frames the passage between sections of the garden. The rear area includes a maintained lawn and a well-established specimen tree.
     </p>
 
     <div class="post-image wide">
       <img
-        src="26662013_34b24420-ed9c-44c2-8009-1d30e12a70b5.jpg"
-        alt="Walled garden courtyard with fountain, mature trees, and brick pavers, 12386 Ridge Cir Mountaingate"
+        src="images/12386-ridge-cir-garden-courtyard.jpg"
+        alt="Walled garden courtyard with fountain and brick pavers at 12386 Ridge Cir"
         loading="lazy"
       />
     </div>
 
     <div class="post-image trio">
       <img
-        src="26662013_6a867ded-4d18-48c0-909b-6ac3b14ab98d.jpg"
-        alt="Garden path with pergola through mature landscaping, 12386 Ridge Cir Brentwood"
+        src="images/12386-ridge-cir-garden-pergola.jpg"
+        alt="Garden pergola and path through mature landscaping, 12386 Ridge Cir"
         loading="lazy"
       />
       <img
-        src="26662013_f90a94fa-0243-4dfe-95fe-76554cdafeb6.jpg"
-        alt="Brick paver garden terrace seen from great room French doors, 12386 Ridge Cir"
+        src="images/12386-ridge-cir-garden-terrace.jpg"
+        alt="Brick paver terrace connecting to great room, 12386 Ridge Cir"
         loading="lazy"
       />
       <img
-        src="26662013_cb94fbe0-da54-4b29-82d6-be2300da29ee.jpg"
-        alt="Rear lawn with specimen tree and balcony above, 12386 Ridge Cir Mountaingate"
+        src="images/12386-ridge-cir-rear-garden.jpg"
+        alt="Rear garden with lawn and specimen tree, 12386 Ridge Cir"
         loading="lazy"
       />
     </div>
+
+    <p>
+      The brick terrace connects back to the great room through its full-height glass wall, completing the indoor-outdoor flow through the main level.
+    </p>
   </section>
 
-  <!-- SECTION 8: Mountaingate Lifestyle -->
+  <!-- SECTION 8: Mountaingate Community -->
   <section>
-    <h2>The Mountaingate Lifestyle: What the Community Offers</h2>
+    <h2>The Mountaingate Community</h2>
     <p>
-      Mountaingate is a well-established private residential community spanning around 870 acres at the crest of the Santa Monica Mountains, with approximately 300 homes across a series of distinct enclaves.
-      The community operates with 24-hour guard-gated security; The Ridge maintains its own dedicated entry gate within that broader structure.
+      Mountaingate is a private Brentwood hillside community with 298 residences across five distinct communities, shaped around 24-hour security, recreational amenities, and access to the Santa Monica Mountains.
+      The community operates with a manned guard gate at the main entrance; The Ridge maintains its own dedicated gate within that structure.
     </p>
 
-    <!-- Aerial / golf course / community -->
     <div class="post-image wide">
       <img
-        src="26662013_72dd2cb2-4e84-4fed-91bd-016e377a3193.jpg"
-        alt="Aerial sunset view of Mountaingate Brentwood with golf course and Santa Monica Mountains"
+        src="images/mountaingate-brentwood-aerial.jpg"
+        alt="Aerial view of Mountaingate Brentwood community at sunset"
         loading="lazy"
       />
     </div>
 
     <p>
-      The Mountaingate Country Club — with 27 holes of golf across two courses, tennis courts, a spa, and a pro shop — is the recreational anchor of the community. Note that club membership is separate from HOA membership; prospective buyers should confirm availability directly.
-      Beyond the club, the community features five pools, multiple clubhouses, and access to the Canyonback Trail and nearby routes through the Santa Monica Mountains.
+      The Mountaingate Country Club offers 27 holes of golf across two courses, tennis courts, a spa, and a pro shop.
+      Note that club membership is separate from HOA membership; prospective buyers should confirm current availability directly.
+      The community also includes five pools, multiple clubhouses, and access to the Canyonback Trail and other Santa Monica Mountains routes.
     </p>
 
     <div class="post-image half">
       <img
-        src="26662013_aa395602-82b6-4576-8306-b211e457a3fb.jpg"
-        alt="Aerial view of Mountaingate Country Club golf course with Los Angeles skyline"
+        src="images/mountaingate-golf-course.jpg"
+        alt="Mountaingate Country Club golf course with Los Angeles skyline"
         loading="lazy"
       />
       <img
-        src="26662013_d3f29af7-8f0e-4e63-8f22-3fddd92a3fd7.jpg"
+        src="images/the-ridge-aerial-view.jpg"
         alt="Aerial view of The Ridge streets at Mountaingate Brentwood"
         loading="lazy"
       />
     </div>
-
-    <div class="post-image half">
-      <img
-        src="26662013_813e516f-210f-4d6b-847f-53cea3806b67.jpg"
-        alt="The Ridge at Mountaingate guard gate and entry"
-        loading="lazy"
-      />
-      <img
-        src="26662013_abee3ffe-9d98-4ac5-a828-3f69afc6148c.jpg"
-        alt="Mountaingate Brentwood entry road with community sign and hillside landscape"
-        loading="lazy"
-      />
-    </div>
   </section>
 
-  <!-- SECTION 9: Brentwood Context -->
+  <!-- SECTION 9: Brentwood -->
   <section>
-    <h2>Brentwood Convenience, Culture, and Calm</h2>
+    <h2>Brentwood and the Westside</h2>
     <p>
-      Brentwood's appeal in the 90049 zip code is well-established among Westside buyers.
-      Residential in character and anchored by San Vicente Boulevard and Brentwood Village, this is a neighborhood that rewards daily life — walkable, quiet, and well-connected without feeling urban.
-      The Getty Center sits on the adjacent hillside; Santa Monica, Beverly Hills, Pacific Palisades, and Westwood are all within reasonable reach depending on time of day.
+      Brentwood in the 90049 zip code is a consistent draw for Westside buyers. The neighborhood is residential in character, anchored by San Vicente Boulevard and Brentwood Village, with everyday Westside convenience built in.
+      Santa Monica, Beverly Hills, Pacific Palisades, and Westwood are all within reasonable reach depending on time of day.
     </p>
     <p>
-      For buyers considering <a href="/neighborhoods/brentwood">Brentwood luxury real estate</a> — whether from across the Westside or relocating internationally — the combination of a private hillside setting and accessible daily infrastructure is a meaningful one.
-      It is why this part of Los Angeles tends to hold its character across market cycles.
+      The Getty Center sits on the adjacent hillside. The 405 Freeway is accessible without being intrusive.
+      For buyers considering <a href="/neighborhoods/brentwood">Brentwood luxury real estate</a>, whether local or relocating internationally, the combination of a private hillside setting and practical daily access is a meaningful part of the appeal.
     </p>
   </section>
 
-  <!-- SECTION 10: Buyer Appeal + Opportunity (merged) -->
+  <!-- SECTION 10: Who This Suits -->
   <section>
-    <h2>Who This Home May Appeal To</h2>
+    <h2>What 12386 Ridge Cir Offers</h2>
     <p>
-      The imagery at 12386 Ridge Cir suggests a buyer drawn to classical scale, natural materials, and a setting that supports both formal entertaining and quiet daily life.
-      For those who want to personalize a home to their own vision while preserving its architectural bones — the grand foyer, the double-height great room, the chef's kitchen, the library, the walled garden — this property offers a substantial foundation in an address that is not frequently available.
+      From the available imagery, this home suits buyers drawn to classical scale and natural materials, with an interest in flexible daily living across multiple spaces.
+      The grand foyer, double-height great room, chef's kitchen, paneled study, and walled garden courtyard are not features that often appear together in <strong>private luxury homes in Los Angeles</strong> at this scale.
     </p>
     <p>
-      Homes within The Ridge at Mountaingate are not common inventory.
-      When a property here becomes available, it tends to move through trusted relationships rather than open-market competition.
-      I work with buyers considering <a href="/home-search">Westside Los Angeles luxury homes</a> and <strong>Mountaingate Los Angeles real estate</strong> who want a real conversation about what is available and what the market in <strong>luxury homes in 90049</strong> currently looks like.
-      My experience in Brentwood, Bel Air, Beverly Hills, and Pacific Palisades — as well as in international markets including Dubai — informs how I approach each search.
+      Buyers who want to personalize a home while preserving its architectural foundation will find a compelling base here.
+      Those considering <a href="/home-search">Westside Los Angeles luxury homes</a> and <strong>Mountaingate Los Angeles real estate</strong> are encouraged to reach out for details.
+      Opportunities in this setting reward prepared, well-advised buyers.
     </p>
     <p>
-      If Mountaingate or Brentwood is on your list, this is worth a conversation.
+      If Mountaingate or Brentwood is on your list, a direct conversation is the right next step.
     </p>
   </section>
 
@@ -828,10 +805,8 @@
     <div class="cta-inner">
       <h3>Begin Your Brentwood Search With Asal</h3>
       <p>
-        For a private conversation about 12386 Ridge Cir, Mountaingate, or any <strong>Brentwood luxury real estate</strong>
-        opportunity on the Westside, I invite you to connect.
-        Every search I lead is guided by discretion, care, and genuine market knowledge.
-        Your next chapter deserves both.
+        For a private conversation about 12386 Ridge Cir, Mountaingate, or <strong>Brentwood luxury real estate</strong>
+        on the Westside, connect with Asal directly. Guided by care, discretion, and a thorough knowledge of this market.
       </p>
       <a href="/contact" class="cta-button">Book an Appointment</a>
       <a href="/home-valuation" class="cta-button outline">Get a Home Valuation</a>
@@ -843,55 +818,53 @@
     <h2>Frequently Asked Questions</h2>
 
     <div class="faq-item">
-      <h3>What makes Mountaingate desirable in Brentwood?</h3>
+      <h3>What makes Mountaingate a notable address in Brentwood?</h3>
       <p>
-        Mountaingate is a large-scale, guard-gated private community in Brentwood spanning around 870 acres — with a private country club (27 holes of golf, tennis, spa), five pools, multiple clubhouses, and direct access to Santa Monica Mountains trails.
-        The combination of security, amenity, and hillside setting is relatively uncommon on the Westside, which is a consistent draw for buyers considering <strong>Mountaingate Brentwood homes</strong>.
+        Mountaingate is a private guard-gated community with 298 residences across five distinct communities in Brentwood.
+        It includes 24-hour security, a private country club with 27 holes of golf, tennis courts and a spa, five pools, and access to Santa Monica Mountains trails.
+        The combination of security, amenity, and hillside setting is uncommon in the Brentwood market, which is what draws buyers to <strong>Mountaingate Brentwood homes</strong>.
       </p>
     </div>
 
     <div class="faq-item">
-      <h3>Is Mountaingate known for privacy?</h3>
+      <h3>Is Mountaingate a gated community?</h3>
       <p>
-        Yes — explicitly so. The community's entry is controlled around the clock by a manned guard gate, and individual enclaves like The Ridge maintain their own dedicated gates.
-        For buyers seeking <strong>private homes in Brentwood, Los Angeles</strong>, Mountaingate is one of the most complete answers available on the Westside.
+        Yes. Mountaingate has a staffed main entrance gate operating around the clock.
+        The Ridge enclave, where 12386 Ridge Cir is located, maintains its own dedicated gate within the broader community structure, adding another layer of separation from the main entry.
       </p>
     </div>
 
     <div class="faq-item">
-      <h3>Why do luxury buyers choose Brentwood, Los Angeles?</h3>
+      <h3>Why do buyers choose Brentwood, Los Angeles?</h3>
       <p>
-        Brentwood draws discerning buyers for its residential character — quiet streets, mature trees, village-scale daily life along San Vicente Boulevard and in Brentwood Village — and its location within reach of Santa Monica, Beverly Hills, Pacific Palisades, and the 405.
-        Within Brentwood, Mountaingate represents a particularly private tier of <strong>Brentwood luxury real estate</strong> that appeals to buyers prioritizing security and community alongside location.
+        Brentwood draws buyers to its residential character, mature tree canopy, walkable village areas, and access to the wider Westside.
+        The 90049 zip code has long been a consistent part of the <strong>luxury real estate in Brentwood</strong> conversation, and Mountaingate represents a particularly private tier within it.
       </p>
     </div>
 
     <div class="faq-item">
-      <h3>What lifestyle does 12386 Ridge Cir support?</h3>
+      <h3>What kinds of spaces does 12386 Ridge Cir include?</h3>
       <p>
-        From the available visuals, this home supports several distinct modes of living simultaneously.
-        The grand foyer, great room, and kitchen support formal and informal entertaining at scale.
-        The wood-paneled library, primary suite, and private walled garden courtyard support quiet retreat and focused daily work.
-        The Mountaingate community amenities extend that range further — golf, tennis, hiking, pools — without requiring residents to leave the community.
+        From the available visuals: a two-story circular foyer, a double-height great room with fireplace and French doors to the garden, a chef's kitchen, a formal sitting room, a wood-paneled study with built-in shelving and a carved fireplace, a primary suite with balcony access and a spa-scale bath, and a walled garden courtyard with a fountain.
+        The home supports flexible daily living across multiple uses.
       </p>
     </div>
 
     <div class="faq-item">
-      <h3>What should buyers know about homes near Mountaingate Country Club?</h3>
+      <h3>Is Mountaingate Country Club membership included with the home?</h3>
       <p>
-        <strong>Homes near Mountaingate Country Club</strong> in Brentwood benefit from the community's full amenity infrastructure — security, landscaping, pools, and trail access —
-        as well as proximity to the club's golf, tennis, and spa facilities.
-        Membership to the Country Club is separate from HOA membership, so prospective buyers should clarify club access and availability directly.
-        An experienced Brentwood advisor can walk you through the specifics.
+        Club membership is separate from HOA membership.
+        Prospective buyers should confirm current availability and membership terms directly.
+        An advisor familiar with the community can help you navigate that conversation.
       </p>
     </div>
 
     <div class="faq-item">
-      <h3>How can I explore private luxury homes in Brentwood?</h3>
+      <h3>How can I learn about available homes in Mountaingate or Brentwood?</h3>
       <p>
-        Many of the most desirable <strong>private luxury homes in Los Angeles</strong> — including those within Mountaingate — are presented through trusted agent relationships
-        before ever appearing on public platforms. The most reliable way to access them is to work with an advisor who is actively connected in this specific market.
-        <a href="/contact">Connect with Asal</a> for a private conversation about what is available now or coming to market soon in Brentwood and the broader Westside.
+        Some properties in established communities like Mountaingate are presented privately before reaching public platforms.
+        Working with an advisor who is active in this market is the most direct way to stay informed.
+        <a href="/contact">Connect with Asal</a> for details on what is currently available in Brentwood and across the Westside.
       </p>
     </div>
 
@@ -900,25 +873,22 @@
   <!-- AUTHOR NOTE -->
   <section class="author-note">
     <p>
-      <strong>Asal Almawy</strong> is a Los Angeles luxury real estate advisor with international experience spanning Dubai, Beirut, and beyond.
-      She specializes in Brentwood, Bel Air, Beverly Hills, Pacific Palisades, and the broader Westside Los Angeles market,
-      serving English- and Persian-speaking clients with discretion, care, and a global perspective.
-      CA DRE# 02066395 &nbsp;·&nbsp; <a href="/contact">Let's Connect</a> &nbsp;·&nbsp; <a href="/market-insights">Market Insights</a> &nbsp;·&nbsp; <a href="/journal">Journal</a>
+      <strong>Asal Almawy</strong> is a Los Angeles luxury real estate advisor with experience across Brentwood, Bel Air, Beverly Hills, Pacific Palisades, and the broader Westside, as well as international markets including Dubai.
+      She works with English- and Persian-speaking clients with care, discretion, and a practical knowledge of this market.
+      CA DRE# 02066395 &nbsp;&middot;&nbsp; <a href="/contact">Let's Connect</a> &nbsp;&middot;&nbsp; <a href="/market-insights">Market Insights</a> &nbsp;&middot;&nbsp; <a href="/journal">Journal</a>
     </p>
   </section>
 
 </article>
 
-<!-- ══════════════════════════════════════
-     SITE FOOTER
-══════════════════════════════════════ -->
+<!-- FOOTER -->
 <footer class="site-footer">
   <p>
-    &copy; 2025 Asal Homes &nbsp;·&nbsp; Asal Almawy, CA DRE# 02066395
-    &nbsp;·&nbsp; <a href="/contact">Connect</a>
-    &nbsp;·&nbsp; <a href="/home-search">Home Search</a>
-    &nbsp;·&nbsp; <a href="/home-valuation">Home Valuation</a>
-    &nbsp;·&nbsp; Los Angeles Luxury Real Estate
+    &copy; 2025 Asal Homes &nbsp;&middot;&nbsp; Asal Almawy, CA DRE# 02066395
+    &nbsp;&middot;&nbsp; <a href="/contact">Connect</a>
+    &nbsp;&middot;&nbsp; <a href="/home-search">Home Search</a>
+    &nbsp;&middot;&nbsp; <a href="/home-valuation">Home Valuation</a>
+    &nbsp;&middot;&nbsp; Los Angeles Luxury Real Estate
   </p>
 </footer>
 
